@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="s.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- <div class="logo">
+            <img src="" alt="">
+            <div class="title">
+                <h2>E-WEIGHTS</h2>
+            </div>
+        </div> -->
+        <nav class="top-nav">
+            <a href="#" class="nav-item" onclick="showSection('home')">Home</a>
+            <a href="#" class="nav-item" onclick="showSection('profile')">Profile</a>
+            <a href="#" class="nav-item" onclick="showSection('cart')">Cart</a>
+
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-input">
+                <button class="search-button"><i class="fa fa-search"></i></button>
+            </div>
+
+            <a href="#" class="nav-item" onclick="showSection('login')">Login</a>
+            <a href="#" class="nav-item" onclick="showSection('signup')">Sign Up</a>
+        </nav>
+        <div class="marquee">
+            <marquee>Big Sale! Up to 50% off on selected items!</marquee>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+
+        <section id="home" class="content-section">
+
+            <aside class="intro">
+                <div class="intro_t">
+                    <h3>Introducing xyz</h3>
+                    <p>we specialize in selling and provide services for electric weighing machines </p>
+                </div>
+            </aside>
+
+            <h1>Products</h1>
+            <div class="product-list">
+                <div class="product-item">
+                    <img  src="img/image.png">
+                    <article id="pro-in">
+                        <p class="para">
+                            name:xyz<br>
+                            price:200$
+                            discription:dudftyfcdghvchgdv
+                        </p>
+                    </article>
+                </div>
+                <div class="product-item">
+                    <img  src="img/image.png">
+                    <article id="pro-in">
+                        <p class="para">
+                            name:xyz<br>
+                            price:200$
+                            discription:dudftyfcdghvchgdv
+                        </p>
+                    </article>
+                </div>
+                <div class="product-item">  
+                    <img src="img/image.png">
+                    <article id="pro-in">
+                        <p class="para">
+                            name:xyz<br>
+                            price:200$
+                            discription:dudftyfcdghvchgdv
+                        </p>
+                    </article>
+                </div>
+                <div class="product-item">
+                    <img src="img/image.png">
+                    <article id="pro-in">
+                        <p class="para">
+                            name:xyz<br>
+                            price:200$
+                            discription:dudftyfcdghvchgdv
+                        </p>
+                    </article>
+                </div>
+                <div class="product-item">
+                    <img  src="img/image.png">
+                    <article id="pro-in">
+                        <p class="para">
+                            name:xyz<br>
+                            price:200$
+                            discription:dudftyfcdghvchgdv
+                        </p>
+                    </article>
+                </div>
+                <div class="product-item">
+                    <img src="img/image.png">
+                    <article id="pro-in">
+                        <p class="para">
+                            name:xyz<br>
+                            price:200$
+                            discription:dudftyfcdghvchgdv
+                        </p>
+                    </article>
+                </div>
+                <div class="product-item">
+                    <img src="img/image.png">
+                    <article id="pro-in">
+                        <p class="para">
+                            name:xyz<br>
+                            price:200$
+                            discription:dudftyfcdghvchgdv
+                        </p>
+                    </article>
+                </div>
+                <div class="product-item">
+                    <img src="img/image.png">
+                    <article id="pro-in">
+                        <p class="para">
+                            name:xyz<br>
+                            price:200$
+                            discription:dudftyfcdghvchgdv
+                        </p>
+                    </article>
+                </div>
+                <!-- Product items will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile" class="content-section">
+            <h1>User Profile</h1>
+            <div class="user-info">
+                <!-- <article id="pro_img">
+                    <img
+                </article> -->
+                <!-- User information will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Cart Section -->
+        <section id="cart" class="content-section">
+            <h1>Your Cart</h1>
+            <div class="team-container cart-items">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Signup Section -->
+        <section id="signup" class="content-section login-container">
+            <h1 id="userdata">Signup</h1>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signup-username">Username:</label>
+                    <input type="text" id="signup-username" name="username" required><br>
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" name="password" required><br>
+                    <button type="submit" id="form_b">Login</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Login Section -->
+        <section id="login" class="content-section login-container">
+            <h1 id="userdata">Login</h1>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="login-username">Username:</label>
+                    <input type="text" id="login-username" name="username" required><br>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="password" required><br>
+                    <button type="submit" id="form_b">Login</button>
+                </div>   
+            </form>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
+ 
